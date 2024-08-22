@@ -1,0 +1,28 @@
+Day 4:
+Started a Github repository! Nice.
+
+Day 3:
+Talked to a friend and he suggested that I could use Flutterflow for creating UI, but then he said that that was too easy and that I should use HTML instead.
+Said that I would use HTML but have decided on using Flutterflow. I don’t know how it works, but I’m sure it’ll be easy.
+Honestly, I don’t know how either of them work. 
+So far, the main and generation screens are done.
+Advisory smells like maple syrup.
+Ok, now the start screen is done.
+Played cave adventure game or whatever it’s called. It’s cool!
+Result : start, main, and generation screens complete.
+
+Day 2:
+Turns out my project proposal wasn’t that good (yikes) and so I redid it.
+Moved to Canva to continue work on the UI.
+Decided today that I would generate the game based on the following:
+Store a prompt from the reader.
+Using code, generate a pattern of rooms, locks, and interactions on those rooms.
+Ask the AI to generate descriptions for each of those rooms and items, storing the result.
+Present the resulting adventure to the player.
+Result : Redid Project Proposal
+
+Day 1:
+Dr. Tra (or is it Mr.? i dunno) forced me to decide what my project was going to be.
+Was initially thinking about making it an AI-generated RPG, but decided on a text adventure (because that is easier).
+Also started on a UI in google slides.
+Result : Project Proposal Complete
