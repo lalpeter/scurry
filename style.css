@@ -1,0 +1,98 @@
+body{
+    background-color: #2b2b2b;
+    margin: 0px;
+}
+
+.top {
+    background-color: #373737;
+    overflow: hidden;
+    padding:18px;
+    text-align: center;
+    color: #ffffff;
+    /* top:0%; */
+  }
+@font-face {
+    font-family: DMSans;
+    src: url(fonts/DMSans/DMSans.ttf);
+}
+  
+/* Style the links inside the navigation bar */
+.top hbar {
+    float:none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: DMSans;
+    font-weight: bold;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #2b2b2b;
+    height: 1035px;
+}
+
+.inventory {
+    background-color: #373737;
+    height: 400px;
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align:center;
+}
+
+.location {
+    background-color: #373737;
+    height: 275px;
+    margin: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.instructs {
+    background-color: #373737;
+    height: 200px;
+    margin: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats {
+    display: grid;
+    float : left;
+    width: 40%;
+    background-color: #262626;
+    font-size: 30px;
+}
+
+.game {
+    float : left;
+    width: 60%;
+}   
+
+
+/* TEXT THINGS */
+.subtitle{
+    float:none;
+    color: #d9d9d9;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    font-family: DMSans;
+    font-weight: bold;
+}
+
+.subtext{
+    float:none;
+    color: #d9d9d9;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: DMSans;
+    max-width: 90%;
+}

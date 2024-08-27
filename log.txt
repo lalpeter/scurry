@@ -1,5 +1,12 @@
+Day 5:
+Bootstrap seems a bit too complicated for me for now... I'll go back later when I'm more experienced...
+
 Day 4:
 Started a Github repository! Nice.
+Tried making a column layout, ended up with only a title.
+Will pursue a grid layout next time.
+Ishan told me that Bootstrap might be helpful? I will have a look next time.
+Result : main page started, with title bar
 
 Day 3:
 Talked to a friend and he suggested that I could use Flutterflow for creating UI, but then he said that that was too easy and that I should use HTML instead.
