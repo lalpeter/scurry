@@ -1,5 +1,13 @@
-Day 5:
+Day 5 - 8/27:
 Bootstrap seems a bit too complicated for me for now... I'll go back later when I'm more experienced...
+Anyways, made a sidebar that works, but it doesn't look super nice when you zoom out.
+Also added in a subsection for the game menu. It scrolls pretty nicely, but it doesn't yet align to the center of the grid... yikes
+I could pretty easily add in an input bar at the very bottom, I think. It would just involve turning the game part into a grid, and then a column format thingy.
+The ONE thing I don't like about this, though, is that when you zoom out, everything gets messed up pretty badly. 
+Seriously thinking of switching to Godot (no downsides, except that I don't learn HTML as much... but then again, that's what college is for).
+Like, in Godot, not only would I be learning game dev, but also have an easier time creating an even better GUI than possible with HTML.
+Will decide during the break later this week.
+Result : Sidebar visually complete, Main Area has a bit of work, Began Contemplation of whether I should use Godot
 
 Day 4:
 Started a Github repository! Nice.

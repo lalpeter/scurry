@@ -34,6 +34,16 @@ body{
     height: 1035px;
 }
 
+/* GAME SIDEBAR */
+
+.stats {
+    display: grid;
+    float : left;
+    width: 350px;
+    background-color: #262626;
+    font-size: 30px;
+}
+
 .inventory {
     background-color: #373737;
     height: 400px;
@@ -62,18 +72,29 @@ body{
     align-items: center;
 }
 
-.stats {
-    display: grid;
-    float : left;
-    width: 40%;
-    background-color: #262626;
-    font-size: 30px;
-}
+/* GAME MAIN */
 
 .game {
-    float : left;
-    width: 60%;
-}   
+    width: 1560px;
+    height: 100%;
+    max-height: 100%;
+    overflow-y:scroll;
+    scrollbar-width:none;
+    /* overflow: hidden; */
+}
+
+.prompt {
+    background-color: #373737;
+    text-align:center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    font-family: DMSans;
+    height: 200px;
+    width: 1400px;
+    margin: 20px;
+    margin-top: 10px;
+}
 
 
 /* TEXT THINGS */
@@ -94,5 +115,4 @@ body{
     text-decoration: none;
     font-size: 24px;
     font-family: DMSans;
-    max-width: 90%;
 }
