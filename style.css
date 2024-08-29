@@ -15,6 +15,10 @@ body{
     font-family: DMSans;
     src: url(fonts/DMSans/DMSans.ttf);
 }
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/RobotoMono/RobotoMono.ttf);
+}
   
 /* Style the links inside the navigation bar */
 .top hbar {
@@ -72,12 +76,39 @@ body{
     align-items: center;
 }
 
-/* GAME MAIN */
+/* GAME INPUT */
 
 .game {
-    width: 1560px;
-    height: 100%;
-    max-height: 100%;
+    width: 1550px;
+    height: 1000px;
+}
+
+.input {
+    background-color: #373737;
+    text-align:center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    font-family: Roboto;
+    color: #ffffff;
+    height: 15px;
+    width: 1400px;
+    margin: 20px;
+    text-wrap: pretty;
+    margin-top: 10px;
+    white-space:pre-wrap;
+    vertical-align: text-top;
+    text-align: left;
+    padding: 2%;
+}
+
+/* GAME MAIN */
+
+.prompts {
+    display: flexbox;
+    width: 100%;
+    height: 925px;
+    max-height: 925px;
     overflow-y:scroll;
     scrollbar-width:none;
     /* overflow: hidden; */
@@ -89,11 +120,18 @@ body{
     text-align: center;
     text-decoration: none;
     font-size: 26px;
-    font-family: DMSans;
+    font-family: Roboto;
+    color: #ffffff;
     height: 200px;
     width: 1400px;
     margin: 20px;
+    text-wrap: pretty;
     margin-top: 10px;
+    white-space:pre-wrap;
+    vertical-align: text-top;
+    text-align: left;
+    padding: 2%;
+    /* letter-spacing: 1px; */
 }
 
 
@@ -104,7 +142,7 @@ body{
     text-align: center;
     text-decoration: none;
     font-size: 26px;
-    font-family: DMSans;
+    font-family: Roboto;
     font-weight: bold;
 }
 
@@ -114,5 +152,16 @@ body{
     text-align: center;
     text-decoration: none;
     font-size: 24px;
-    font-family: DMSans;
+    font-family: Roboto;
+    padding: 2%;
+}
+
+.subsmall{
+    float:none;
+    color: #d9d9d9;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Roboto;
+    padding: 10%;   
 }

@@ -1,3 +1,7 @@
+Day 6 - 8/29:
+Been continuing working on the main interaction area, which is going (???)
+Looking into Flexbox per Mr. Tra's recommendation, seems very helpful
+
 Day 5 - 8/27:
 Bootstrap seems a bit too complicated for me for now... I'll go back later when I'm more experienced...
 Anyways, made a sidebar that works, but it doesn't look super nice when you zoom out.
