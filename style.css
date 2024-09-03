@@ -1,12 +1,13 @@
 body{
     background-color: #2b2b2b;
     margin: 0px;
+    height: 100%;
 }
 
 .top {
     background-color: #373737;
     overflow: hidden;
-    padding:18px;
+    padding:0.5%;
     text-align: center;
     color: #ffffff;
     /* top:0%; */
@@ -20,13 +21,13 @@ body{
     src: url(fonts/RobotoMono/RobotoMono.ttf);
 }
   
-/* Style the links inside the navigation bar */
+/* TOP BAR */
 .top hbar {
     float:none;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 22px;
     font-family: DMSans;
     font-weight: bold;
 }
@@ -41,36 +42,52 @@ body{
 /* GAME SIDEBAR */
 
 .stats {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 15px;
     float : left;
-    width: 350px;
+    width: 300px;
     background-color: #262626;
     font-size: 30px;
+    height: 100%;
 }
 
 .inventory {
     background-color: #373737;
-    height: 400px;
+    height: fit-content;
     margin: 20px;
     margin-top: 20px;
     margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
     text-align:center;
 }
 
 .location {
     background-color: #373737;
-    height: 275px;
+    height: fit-content;
     margin: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
     text-align: center;
 }
 
 .instructs {
     background-color: #373737;
-    height: 200px;
+    height: 250px;
     margin: 20px;
     margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,16 +103,15 @@ body{
 .input {
     background-color: #373737;
     text-align:center;
-    text-align: center;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 18px;
     font-family: Roboto;
     color: #ffffff;
-    height: 15px;
+    height: 1px;
     width: 1400px;
     margin: 20px;
     text-wrap: pretty;
-    margin-top: 10px;
+    margin-top: 50px;
     white-space:pre-wrap;
     vertical-align: text-top;
     text-align: left;
@@ -105,7 +121,8 @@ body{
 /* GAME MAIN */
 
 .prompts {
-    display: flexbox;
+    display: flex;
+    flex-direction: column-reverse;
     width: 100%;
     height: 925px;
     max-height: 925px;
@@ -116,19 +133,19 @@ body{
 
 .prompt {
     background-color: #373737;
-    text-align:center;
+    border-radius: 5px;
+    border: 2px solid #272727;
     text-align: center;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 18px;
     font-family: Roboto;
     color: #ffffff;
-    height: 200px;
+    height: fit-content;
     width: 1400px;
     margin: 20px;
     text-wrap: pretty;
-    margin-top: 10px;
     white-space:pre-wrap;
-    vertical-align: text-top;
+    vertical-align:middle;
     text-align: left;
     padding: 2%;
     /* letter-spacing: 1px; */
@@ -139,19 +156,19 @@ body{
 .subtitle{
     float:none;
     color: #d9d9d9;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 20px;
     font-family: Roboto;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .subtext{
     float:none;
     color: #d9d9d9;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
     font-family: Roboto;
     padding: 2%;
 }
@@ -159,7 +176,7 @@ body{
 .subsmall{
     float:none;
     color: #d9d9d9;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     font-size: 16px;
     font-family: Roboto;

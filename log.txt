@@ -1,6 +1,17 @@
+Day 7 - 9/3:
+Okay, Flexbox is really helpful! Today was dedicated mainly to integrating it and polishing some UI things, specifically sizing and not making the sidebar look bad.
+I applied Flexbox into the main scrolling area, along with the sidebar.
+Also, changed the prompt class to look good even when the only thing in there is normal text.
+Which looks pretty good! Nice.
+If there isn't enough time, I'm thinking about leaving the generation bar for later... or not, I dunno.
+I've searched up some animation things, so I don't think it'd be that hard to do.
+And I still need to add in a button for the input stuff.
+Result : Scaling Changes and Flexbox Implementation
+
 Day 6 - 8/29:
 Been continuing working on the main interaction area, which is going (???)
 Looking into Flexbox per Mr. Tra's recommendation, seems very helpful
+Result : Added in Scrollable UI and Input Bar
 
 Day 5 - 8/27:
 Bootstrap seems a bit too complicated for me for now... I'll go back later when I'm more experienced...
