@@ -1,3 +1,12 @@
+Day 9 - 9/9:
+Okay. I'm starting this early as a challenge to see if I can get things done fast!
+So today,  let's get started on making a sidebar and cleaning up the UI.
+...Ok, I'm finished for today (I would like to do more though...)
+The bottom bar is now just by itself, which is nice
+And after a LOT of wrangling, I got the top bar to finally have a button chilling on the left!
+My goal for this week is to get a sidebar popping out when I press the button, one way or another!
+Result : Added in Top Bar Button
+
 Day 8 - 9/5:
 Implemented a bunch of UI shadows, roundness, and borders...
 And it looks nice! Ishan said it looks like bootleg ChatGPT and yeah, it literally is 
@@ -6,7 +15,6 @@ So I think I'll just make it so you can press enter to confirm.
 (It's a text adventure after all)
 Really wanted to do a sidebar today (basic JS!!!) but I guess that will have to wait.
 Result : UI Border Tweaks + No More Input Button
-
 
 Day 7 - 9/3:
 Okay, Flexbox is really helpful! Today was dedicated mainly to integrating it and polishing some UI things, specifically sizing and not making the sidebar look bad.
