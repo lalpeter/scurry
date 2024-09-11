@@ -60,7 +60,7 @@ body{
     display: grid;
     grid-template-columns: auto auto;
     background-color: #2b2b2b;
-    height: 1035px;
+    height: 1030px;
 }
 
 /* GAME SIDEBAR */
@@ -83,10 +83,10 @@ body{
     margin: 20px;
     margin-top: 20px;
     margin-bottom: 5px;
-    padding-top: 5px;
+    padding-top: 30px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 30px;
     text-align:center;
 
     border-radius: 5px;
@@ -99,10 +99,10 @@ body{
     margin: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
-    padding-top: 5px;
+    padding-top: 30px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     text-align: center;
 
     border-radius: 5px;
@@ -111,10 +111,10 @@ body{
 
 .instructs {
     background-color: #373737;
-    height: 250px;
+    height: fit-content;
     margin: 20px;
     margin-top: 10px;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 5px;
@@ -214,7 +214,7 @@ body{
     border-radius: 10px;
     transition-duration: 0.4s;
 }
-  
+
 .button:hover {
     background-color: #c4c4c4; /* Green */
     color: #414141;

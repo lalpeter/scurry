@@ -1,3 +1,8 @@
+Day 10 - 9/10:
+I'm back! I have multi to worry about today but I'm gonna focus on this anyways...
+So my goal for today is to get at least SOMETHING popping out of the left by the end of class.
+Try renaming every class - bootstrap might be overriding some of yours.
+
 Day 9 - 9/9:
 Okay. I'm starting this early as a challenge to see if I can get things done fast!
 So today,  let's get started on making a sidebar and cleaning up the UI.
