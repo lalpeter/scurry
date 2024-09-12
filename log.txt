@@ -1,7 +1,24 @@
+Day 11 - 9/12:
+Decided to hit the grind! Because why not! Also because there's a presentation of some sort tomorrow!
+So I forgot to push my changes via github on 9/10, so I snuck into Mr. Tra's room at the end of 8A today to push to origin!
+Also learned about codespaces from Eric which... work, but just don't feel nice (and need a command to test, as opposed to Alt + `)...
+Anyways, after all that, I did a bit of formatting and then came home for the real grind...
+Which was the sidebar! I replaced the old Bootstrap stuff with new import links to the stylesheets (or something) and put the JS imports in the right place.
+Then, I made the sidebar! Thankfully, after not too much searching, I found that Bootstrap 5 had a very easy-to-follow tutorial!
+...that I basically copied. BUT I had to modify it a lot because it didn't fit in and was unnecessarily complicated, so it's NOT a academic integrity violation!
+So in the sidebar, there is a textarea and some sliders that don't work properly nor have indicators for much, but this is essentially a half-working mockup soooooo...
+Could use some bottom buttons later on! Will look into that later!
+I've also added in some more sample prompts to showcase the scrolling (crazy, I know).
+I'll be making a presentation for a bit, but otherwise I'm done for today. See you later!
+Result : Added in a Partially Working Sidebar
+
 Day 10 - 9/10:
 I'm back! I have multi to worry about today but I'm gonna focus on this anyways...
 So my goal for today is to get at least SOMETHING popping out of the left by the end of class.
 Try renaming every class - bootstrap might be overriding some of yours.
+...NVM! This is me on wednesday reporting that that sidebar was never a thing!
+But! I got ready for it on this day by adding in bootstrap, which was its own struggle...
+Result : Added in Bootstrap
 
 Day 9 - 9/9:
 Okay. I'm starting this early as a challenge to see if I can get things done fast!

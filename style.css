@@ -43,8 +43,8 @@ body{
 .barButton {
     padding-left: 8px;
     padding-right: 8px;
-    padding-top: 6px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 4px;
     margin-left: 12px;
     border: none;
     cursor: pointer;
@@ -218,6 +218,37 @@ body{
 .button:hover {
     background-color: #c4c4c4; /* Green */
     color: #414141;
+}
+
+/* GENERATION SIDEBAR */
+.describe {
+    background-color: #302f2f;
+    text-align:center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Roboto;
+    color: #ffffff;
+    height: 200px;
+    width: 100%;
+    text-wrap:stable;
+    /* white-space:pre-wrap; */
+    vertical-align: text-top;
+    text-align: left;
+    padding: 2%;
+
+    border: 2px solid #1f1f1f;
+}
+
+.barSubtitle{
+    float:none;
+    color: #d9d9d9;
+    text-align: left;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Roboto;
+    padding: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* TEXT THINGS */
