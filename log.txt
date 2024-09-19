@@ -1,3 +1,13 @@
+Day 12 - 9/19:
+I've been mildly selling but whatever! I'm gonna work hard now.
+I want to have sliders styling properly and add in some buttons at the bottom of the UI.
+And not just any buttons! I want there to be a gradient or something that wiggles when you touch it.
+...So, I only did some parts of the slider :c
+There's a lot more going on since Bootstrap has a war with HTML for some reason?
+And when I try to change the default input thing, it says lol no and just combines itself with Bootstrap???
+I think I'll be back to work on this later...
+Result : Made Sidebars Kinda Prettier
+
 Day 11 - 9/12:
 Decided to hit the grind! Because why not! Also because there's a presentation of some sort tomorrow!
 So I forgot to push my changes via github on 9/10, so I snuck into Mr. Tra's room at the end of 8A today to push to origin!
