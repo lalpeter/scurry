@@ -6,7 +6,10 @@ And not just any buttons! I want there to be a gradient or something that wiggle
 There's a lot more going on since Bootstrap has a war with HTML for some reason?
 And when I try to change the default input thing, it says lol no and just combines itself with Bootstrap???
 I think I'll be back to work on this later...
-Result : Made Sidebars Kinda Prettier
+Ok, I'm back
+I've added in some buttons at the bottom of the sidebar.
+Which is fine! Could've done more but whatever!
+Result : Made Sidebars Kinda Prettier and Added Generation Buttons
 
 Day 11 - 9/12:
 Decided to hit the grind! Because why not! Also because there's a presentation of some sort tomorrow!
