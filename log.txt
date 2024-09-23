@@ -1,3 +1,10 @@
+Day 13 - 9/23:
+I've been worrying about multi for a while, but I think I should work right now.
+The issue is I'm not sure what to do! All main things related to the UI are done.
+EXCEPT for the dynamically scaling UI. But that can come later!
+I think my focus should be inputting something and it popping back at you as a text prompt when you press enter.
+Result : Started on JS and whatnot
+
 Day 12 - 9/19:
 I've been mildly selling but whatever! I'm gonna work hard now.
 I want to have sliders styling properly and add in some buttons at the bottom of the UI.
