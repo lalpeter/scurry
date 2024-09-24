@@ -1,3 +1,13 @@
+Day 14 - 9/24:
+Yeah no I'm basically studying way too much now...
+Got geo today, had multi yesterday, gonna have physics tomorrow...
+But made it so that when you input a text thing a response pops up that tells you what you typed.
+Which is neat, I guess. I just wonder how I'm going to use that value...
+While I would like it to slide out in a nice clean way, I don't think there's a need to polish the prompts just yet.
+But I did do one thing - made sure that you can input tags! Like, italics!
+Which I should have taken a lot less time than it did.
+Result : Added in Basic Prompt Displaying
+
 Day 13 - 9/23:
 I've been worrying about multi for a while, but I think I should work right now.
 The issue is I'm not sure what to do! All main things related to the UI are done.
