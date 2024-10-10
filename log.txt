@@ -1,3 +1,8 @@
+Day 16 - 10/7:
+Made a slideshow on that day (this is a reflection from friday :< )
+And I've modified it since! I think it's fine, but I'm kinda iffy about the "everything app" part??
+Result : Made a Hook Slideshow
+
 Day 15 - 9/30:
 Started out with working on trying to ge text to update whenever I change the range value.
 And I've seen various events, buut none of them work??? I dunno...
