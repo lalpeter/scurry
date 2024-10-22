@@ -1,3 +1,10 @@
+Day 15 - 10/21:
+It's been a little while...
+We've been doing presentations for the past few weeks, which is why.
+Anyways, I've knocked out a COMPLETE text adventure for testing.
+Except I have multi tomorrow. WHY??? SO I COULDN'T IMPORT IT!!!
+Result : Made Text Adventure for Testing
+
 Day 14 - 9/24:
 Yeah no I'm basically studying way too much now...
 Got geo today, had multi yesterday, gonna have physics tomorrow...
