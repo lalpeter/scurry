@@ -1,3 +1,9 @@
+Day 17 - 11/12:
+Presentations are over!
+Started planning on the graph structure.
+3D.
+Result : Some Graph Planning
+
 Day 16 - 10/7:
 Made a slideshow on that day (this is a reflection from friday :< )
 And I've modified it since! I think it's fine, but I'm kinda iffy about the "everything app" part??
