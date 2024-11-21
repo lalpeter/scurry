@@ -1,3 +1,9 @@
+Day 18 - 11/21:
+It's been a while again! Tests and shit, you know.
+It includes some inventory, lock things, and navigation.
+Though, I will say I'm still unsure how to index neighbors.
+Result : Finished Planning
+
 Day 17 - 11/12:
 Presentations are over!
 Started planning on the graph structure.
