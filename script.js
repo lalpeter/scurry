@@ -63,13 +63,13 @@ function run(input){
   }
   if (at == "menu"){
     at = "m1";
-    prompt(`At the end of the street lies a mysterious house that, to your knowledge, hasn’t been visited for years, though an old wives’ tale tells of birds of all kinds coming in to feast each Halloween. Barring the fact that there are some geese around the house, it’s more of a silly story than a truth.
+    prompt(`At the end of the street lies a mysterious house that, to your knowledge, hasn’t been visited for years, though an old wives’ tale tells of birds of all kinds coming in to feast each Thanksgiving. Barring the fact that there are some geese around the house, it’s more of a silly story than a truth.
 
 Type anything to continue.`);
   }
   else if (at == "m1"){
     at = "m2";
-    prompt(`Yet one day, you, a professional chef, receive a neatly written (and confidential) letter requesting a certain dish at a certain Halloween reception: Coq au Vin. The destination? That house. 
+    prompt(`Yet one day, you, a professional chef, receive a neatly written (and confidential) letter requesting a certain dish at a certain Thanksgiving reception: Coq au Vin. The destination? That house. 
 
 Type anything to continue.`);
   }

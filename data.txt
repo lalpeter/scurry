@@ -1,0 +1,447 @@
++FRONT_DOOR
+{You are standing in front of the old hickory door of a run-down brick house. Around you is a forest of orange and red, and behind you is the one-way road that led you here. The door is unlocked.}
+
+!south
+{Though the road back seems quite inviting, you are here to complete a job. Why would you turn back?}
+
+@north=ENTRANCE
+
+////////////////////////////////////////////
++ENTRANCE
+
+?<!hole_fixed>
+{On a vintage embroidered carpet, you stand in the house’s guestroom. Some rickety stairs lead up, with a hole too big to jump across. To your left is a nice aroma, and to your right is a large living room.}
+
+?<=hole_fixed>
+{On a vintage embroidered carpet, you stand in the house’s guestroom. Some rickety stairs, patched by an unsturdy wooden plank, lead up. In front of you is a nice aroma, and to your right is a large living room.}
+
+!south
+{The door is locked. Well, you locked it when you came in and it’s now stuck shut. Now look what you’ve done.}
+
+_plank!(@[up])
+{You place the plank on the stairs. It trembles a bit, but should work as a temporary staircase.}
+
+@up~=UPSTAIRS
+@west=KITCHEN
+@east=LIVING_ROOM
+
+////////////////////////////////////////////
++KITCHEN
+?
+{You stand in a surprisingly well-kept kitchen. The counter is arranged with an array of empty plates, and the stove (electric) has some tin pans and pots. The window above the sink looks over a fenced-in garden with a greenhouse.}
+
+?<!pie_eaten>
+{A warm, aromatic butter pie lies on the counter, and below it a note that reads “for our chef :> ”.}
+
+?<=pie_eaten>
+{Next to the delicious pie, a notepad lies on the table. You need the ingredients:
+
+Red Wine
+Thyme
+Tomatoes
+Garlic
+Onions
+Chicken}
+
+%pie!(=pie_eaten)
+{It’s probably for you? Well, one way or another, it smells great and you’re hungry. The creamy flavours melt into your mouth as you wolf it down. Why hire a chef if the food’s so good already? Out of the corner of your eye, you think you see a sparrow of some sort flutter away.
+
+As you finish up the pie, your fork touches something hard. You scoop it out of the pie. A ballpoint pen. Huh.
+
+You write the recipe down. Coq au Vin. It’s a traditional French braised chicken stew. Chicken. If the stories are true, then why would birds be eating… birds?}
+
+_seeds<!carl_met>
+{While you could use the pumpkin seeds for something like roasted seeds or pie, you’re not here for that.}
+
+_seeds!<=carl_met>(^[roasted_seeds])
+{There isn’t a fancy bird that can resist the scent of roasted seeds, you think. You batter up the pumpkin seeds in some butter, arrange them on a sheet, and let them bake in the oven at 300°F for 45 minutes.}
+
+@south=ENTRANCE
+@east=DINING_AREA
+
+/////////////////////////////////////////////////////
++LIVING_ROOM
+?
+{The living room(?) is a bit cramped, to say the least. An array of books and rods litter the floor, and a scratched-up couch faces an Apple Pro Display XDR. Like, complete with Center Stage and everything. It’s playing the latest Mr. Beast video.
+
+To your right, under a painting of a great egret, lies a closet door just wide enough to squeeze into. To your north, past some haphazardly placed coffee tables is what looks to be the dining area.}
+
+_carl
+{“Oh, this is the one with Karl Jacobs!”}
+
+@west=ENTRANCE
+@east=CLOSET
+@north=DINING_AREA
+>DINING_AREA
+{Under the lights of flickering candles above, you face a cluttered table, littered with more books and trash. Surprisingly, this room is quite large with many of these tables and chandeliers. If it weren’t for all the clutter, it would probably resemble a high-end restaurant. Natural light streams through windows facing the backyard, overgrown with vines but lit by torchlight.}
+
+?<![seeds]>
+{A neat packet of pumpkin seeds lies on the floor.}
+
+?
+{To your right, more light leaks from a wider room with some doors.}
+
+^seeds
+{You take the pumpkin seeds. They won’t be in the Coq au Vin you’re making, but you never know.}
+
+@west=KITCHEN
+@east=SOLARIUM
+@south=LIVING_ROOM
+/////////////////////////////////////////////////////
++DINING_AREA
+?
+{Under the lights of flickering candles above, you face a cluttered table, littered with more books and trash. Surprisingly, this room is quite large with many of these tables and chandeliers. If it weren’t for all the clutter, it would probably resemble a high-end restaurant. Natural light streams through windows facing the backyard, overgrown with vines but lit by torchlight.}
+
+?<![seeds]>
+{A neat packet of pumpkin seeds lies on the floor.}
+
+?
+{To your right, more light leaks from a wider room with some doors.}
+
+^seeds
+{You take the pumpkin seeds. They won’t be in the Coq au Vin you’re making, but you never know.}
+
+@west=KITCHEN
+@east=SOLARIUM
+@south=LIVING_ROOM
+/////////////////////////////////////////////////////
++CLOSET
+
+?<!breakers_on>
+The closet is cramped, but tall. It’s too dark to see anything, but there’s a light. Out of power, probably.
+
+?<=breakers_on![red_wine]>
+{The closet is cramped, but tall. Looking up, you spot some red wine. But it’s just out of reach. You’ll need something to grab it with.}
+
+?<=breakers_on=[red_wine]>
+{The closet is cramped, but tall. Looking up, you see an empty shelf.}
+
+^wine<=breakers_on>
+{It’s out of reach.}
+
+^wine<=[rake]=breakers_on>
+{You carefully raise the rake and use its tip to lightly knock over the red wine. Just before it can hit the floor, you catch it with your left hand. Nice!}
+
+_carl<!breakers_on>
+{“Turn on the lights, fool!”}
+
+_carl<![wine]>
+{“You think I can reach that? Get something to grab it with, fool!”}
+
+_carl<={-[wine]}
+{“Nice catch.”}
+
+@east=LIVING_ROOM
+
+/////////////////////////////////////////////////////
++SOLARIUM
+?
+{Entering the room, you’re greeted with a stream of bright light. Above you is a wide glass skylight, with a window propped open. There are some tables and fridges on the side, and a furry tan carpet covers the floor.
+
+Ahead of you is a glass door leading to the porch, and a nearby staircase leads down into the basement.}
+
+@north=PATIO
+@down=BASEMENT_STAIRS
+@west=DINING_AREA
+
+/////////////////////////////////////////////////////
++PATIO
+
+?<!breakers_on>
+You stand on the wooden patio, which of all things has been recently pressure-washed. Above you, plenty of garden lights are strung in a wave pattern but have not been turned on.
+
+?<=breakers_on>
+{You stand on the wooden patio, which of all things has been recently pressure-washed. A tapestry of orange lights glitter as strings above you, a single moth fluttering about.}
+
+?<!carl_met>
+{On the chimney of the building, you see the most chill chicken in your life.
+
+“Top o’ the morning, you down there! How goes the sunrise? Truly a beauty. If you are here on business concerns, I’ll be down when the party starts!”
+
+While the chicken is quite dapper, you get the sense that he can’t see you very well. Maybe the chicken can give you some useful information about where to get the ingredients. If he came down.}
+
+?<=carl_met>
+{“I’ll be down later! Toodaloo!” shouts the chicken.
+
+You get the sense that the chicken is ignoring you. Maybe the chicken can give you some useful information about where to get the ingredients. If he came down.}
+
+?<=seeds_tossed>
+{You see the stately chicken minding his own business with the seeds.}
+
+_seeds
+{You take out some seeds and toss them up at the chicken. He doesn’t seem to notice.}
+
+_roasted_seeds!
+{You scatter some roasted seeds over the patio. Little did the chicken know, nobody can ignore the scent or roasted seeds.
+
+Without a doubt, the chicken comes down to investigate the seeds. “Ooh, has the party started?” It’s surprising how he hasn’t noticed you yet. You should probably capture him, but bare hands probably won’t do.}
+
+_apron!(^[carl])
+{Cluck! You take off your apron and pounce on the chicken, now a ball of wiggling white cloth. Standing up, you carefully unfold a small part of the apron and the chicken pops his head through.
+
+“Hello! Nice to meet you! I’m Carl,” he says, with eyes wide open. “How goes your day?” You decide to tell him about the meal, leaving out the chicken part.
+
+“Oh, I’m sure I can help! Ask me if you need anything. But by name! I’m not a chicken,"he says. Then falls asleep. Okay then.}
+
+_carl
+{“Those seeds on the floor look very good…”}
+
+@west=FOUNTAIN
+@south=SOLARIUM
+
+/////////////////////////////////////////////////////
++FOUNTAIN
+
+?
+{A ceremonial fountain lies at the centre of the yard. Looking around you, you see a circle of torches, all burning brightly. To the north is a small stone path leading to a greenhouse.
+
+There is an inscription on the side of the fountain.}
+
+?<![rake]>
+{A rake leans against the fountain.}
+
+^rake
+{You take the rake. Maybe this will be useful in the future.}
+
+^torch
+{You grab a torch and extinguish it.}
+
+%inscription
+{To our founder, Eldric. Each morning, he rose with unwavering resolve to follow the rising sun, believing it would guide him to fortune. Yet day after day, the sun never returned to him his kindness. Yet, one day, he noticed a flock of birds soaring high above, as if inviting him. Following the birds, he soon discovered a glade where sunlight poured down like liquid gold over a single magnificent apple gleaming on the bough. With trembling hands, he plucked the fruit. The founder apple, as it was called, has been passed down across the generations that bear our home.}
+
+_carl<![rake]>
+{“Watch out! If you step on that rake it will attack back!”}
+
+_carl<-[rake]>
+{“That inscription is probably the hint to a puzzle of some sort.”}
+
+@north=GREENHOUSE_DOOR
+@east=PATIO
+
+/////////////////////////////////////////////////////
++GREENHOUSE_DOOR
+
+?<!greenhouse_unlocked>
+{You stand in front of a stained glass door. Inside of it seem to be the plants you need. It has a number lock, each number being 1-5. Looking inside, you see the plants numbered:
+1) Garlic
+2) Tomatoes
+3) Thyme
+4) Grain
+5) Onions}
+
+?<=greenhouse_unlocked>
+{You stand in front of a stained glass door. It’s unlocked, and you sense warmth radiating from it.}
+
+if(loc = “GREENHOUSE_DOOR”)
+{You input the sequence and try the lock. It doesn’t budge.}
+
+%43521(@[north])
+{You input the sequence and try the lock… and to your surprise, it works! You push the door in front of you slightly open and you feel a small wave of heat pass by you.}
+
+_carl<!greenhouse_unlocked>
+{“There hasn’t been anyone who used the greenhouse for a while, so I decided to lock the door. Unfortunately, I’ve forgotten the password, but I think it has to do with the numbers of the plants and a note I’ve written upstairs somewhere.”}
+
+_carl<=[letter]>()
+{“Oh, the note! Here, give me your pen.” You hold up the pen and begin to question how a chicken would hold a pen when he grabs it with his beak and somehow underlines three words. “Here, look at it again.”}
+
+_carl<=[annotated_letter]>:
+{“Look at the note, fool!”}
+
+@north~=GREENHOUSE
+@south=FOUNTAIN
+
+/////////////////////////////////////////////////////
++UPSTAIRS
+?
+{In a wooden room, you stand on a carpeted area. On the northwest edge, there is a balcony overlooking the candle-lit kitchen. It feels warm up here, and you want to sit down for a bit.}
+
+?<!breakers_on>
+{To your right is a breaker box.}
+
+%breaker!
+{On closer inspection, the lights to the closet, backyard, and basement are off. Turning them on, you hear a rising hum from downstairs.}
+
+@north=BEDROOM
+@down=ENTRANCE
+
+/////////////////////////////////////////////////////
++BEDROOM
+?
+{The bedroom is a cosy loft with soft jazz music playing in the background. While it is fit with windows, a desk, and wooden rafters, there isn’t a bed in sight. Strange.}
+
+?<!letter_taken>
+{On the desk, you spot a note scrawled in neat cursive.}
+
+^letter(=letter_taken)
+{You take the note. It says:
+“T’is a warning to my neighbour. Verily, cows graze upon thy neighbour’s plants, by your reflecting pond.”
+
+Why so archaic? Though, you glance through the bedroom window and you indeed do see cows absolutely devouring the crops. You pocket the note.}
+
+_carl<!letter_taken>
+{“Oh, there’s that letter I mentioned. I’m pretty sure I wrote something helpful in it somewhere.!”}
+
+_carl<=letter_taken>
+{“Give me your pen.” You hold up the pen and begin to question how a chicken would hold a pen when he grabs it with his beak and somehow underlines three words. “Here, look at it again.”}
+
+@south=UPSTAIRS
+
+/////////////////////////////////////////////////////
++GREENHOUSE
+?
+{You step into the greenhouse and are greeted by warm air, with a hint of the scent of dirt. From the windows, sunlight streams through, casting soft patterns across the vibrant plants. Other than Carl’s ruffling, the space is calm and serene.
+
+All the plants you could possibly need are here.}
+
+^tomato
+{You grab a tomato. You turn it around in your hand. It’s pretty hearty, and... surprisingly large. More like a cantaloupe... Huh.
+
+You pocket it.}
+
+^garlic
+{You reach into some of the submerged pots and pull out some onions. Shaking off the dirt, you can’t help but note that you can already smell them somewhat.
+
+You pocket them.}
+
+^grain
+{You take some grains. You didn’t see any flour anywhere, but you should be able to make some yourself.
+
+You pocket the grains.}
+
+^onions
+{You uproot some onions, carefully avoiding pulling up too much dirt. They’re fat and bulbous, almost like apples.
+
+You cut the stalks off and pocket them.}
+
+^thyme
+{The thyme comes off with a good yank. It’s a bit rough to the touch and tickles your hand as you rub it.
+
+You pocket the thyme.}
+
+%apple
+{You dig around until you notice a large orange apple glistening in the garden lights. You sense a presence coming from it, as if you should leave it alone.
+
+That’s what you decide to do.}
+
+@south=GREENHOUSE_DOOR
+
+/////////////////////////////////////////////////////
++BASEMENT_STAIRS
+
+?<!torch_lit>
+{You begin to descend the creaking wooden stairs. However, darkness presses in from all sides, making it impossible to see anything at all. You’ll have to find a light and come back.}
+
+?<=torch_lit>
+{Your torchlight flickers, revealing the basement stairs as uneven and splintered. Shadows shift across the stone walls, showing damp patches and cobwebs hanging in the corners.}
+
+?<=breakers_on>
+{You notice some sparks glancing across the bottom of the stairs. The basement lights are probably broken, so you’ll need a different light...}
+
+_torch<!torch_lit>(=torch_lit@[down])
+{You strike the yard torch and the dry wood crackles as a small flame flickers on. The warm glow pushes back the darkness just enough to reveal the rough stone walls and stairs.}
+
+@up=SOLARIUM
+@down~=BASEMENT
+
+/////////////////////////////////////////////////////
++BASEMENT
+
+?<!torch_burnt>
+{At the bottom of the stairs, you enter a dark basement lit by the flickering light of your torch. A large, rusted door stands against one wall, and beside it are three levers mounted on the stone, left to right. The first has a golden inscription of an apple underneath it, but the other two inscriptions are unclear.
+
+From left to right, each lever is referred to as one, two, or three. Type “reset” flip all levers off.}
+
+?<=torch_burnt>
+{At the bottom of the stairs, you enter a dark basement lit by the flickering light of your torch. A large, rusted door stands against one wall, and beside it are three levers mounted on the stone, left to right. The first has a golden inscription of an apple underneath it.
+
+The second has a red inscription of the sun under it, but the last inscription is unclear.
+
+From left to right, each lever is referred to as one, two, or three. Type “reset” flip all levers off.}
+
+_carl<!basement_door_open>
+“The third lever… he squints. That one reminds me of something. Go read the inscription… there’s a pattern of some sort in there.”
+
+_carl<=basement_door_open>
+“Oh! Just... be careful when handling him.”
+
+_torch<!torch_burnt>
+{You hold the torch up to the levers to maybe get a closer look, when suddenly, the inscription on the second one becomes clear. The sun.}
+
+%one<!1f!2f!3f>
+{You flip the first lever.}
+
+%one<!1f=2f=3f=2first=3secnd>(@[north])
+You grasp the handle of the last lever and pull it down with a firm tug. There’s a loud click, followed by a series of mechanical whirs that echo through the basement. The rested door creaks open softly, revealing a dark corridor beyond. 
+
+%one<!1f=2f=3f>(!3secnd!2first)
+You flip the first lever. You hear a large creaking mechanism as all the levers turn off. That didn’t work.
+
+/////////////
+
+%two<!torch_burnt>
+{The lever won’t budge, as if blocked by some unknown force. You need to present an item of some sort to it so it can budge.}
+
+%two<=torch_burnt!1f!2f!3f>(=2first)
+{You flip the second lever.}%
+
+%two<=1f!2f=3f>(!3secnd!2first)
+You flip the first lever. You hear a large creaking mechanism as all the levers turn off. That didn’t work.
+
+/////////////
+
+%three<!1f=2f!3f>(=3secnd)
+{You flip the third lever.}
+
+%three<=1f=2f!3f>(!3secnd!2first)
+You flip the first lever. You hear a large creaking mechanism as all the levers turn off. That didn’t work.
+
+/////////////
+
+%reset(!1f!2f!3f!3secnd!2first)
+You flip the first lever again. You hear a large creaking mechanism as all the levers turn off.
+
+@north~=PRECIPICE
+@up=BASEMENT_STAIRS
+
+/////////////////////////////////////////////////////
++PRECIPICE
+
+?
+{At the end of the corridor, you stand before a large, gaping hole in the floor, its edges rough and crumbling. Peering into the abyss, you can’t see the bottom. Only an impenetrable darkness yawns below, as if it could swallow your torchlight whole.}
+
+?<!ladder_used>
+{Next to the hole, a long rope ladder lies coiled, its fibres frayed and worn, suggesting it hasn't been used in centuries.}
+
+%ladder!<!ladder_used>(=ladder_used@down)
+{You grab the long rope ladder and carefully uncoil it. With a firm grip, you drop one end into the hole, watching it disappear into the dark as it falls.}
+
+@down~=FREEZER
+@south=BASMENT
+
+/////////////////////////////////////////////////////
++FREEZER
+
+?
+{A chill descends upon you as your shoes click against the floor. It’s dark and damp - as if the shadows are trying to swallow up what little light you have. The walls around you seem to be growing taller and taller, feeling as if you are in a stone cage. Looking forwards, you notice your torchlight casts orange rays over what appears to be a large stone coffin.}
+
+?<=coffin_open=chicken_taken>
+{On the coffin lies a pile of wilted flowers, the occupant now gone. Why such a stately chamber for... a chicken of all things?}
+
+?<=coffin_open!chicken_taken>
+{On the open coffin lies the red junglefowl. You... I guess you finally found the chicken, huh?}
+
+%coffin!(=coffin_open)
+{You slowly bust the lid off the coffin. With a large grunt, you lift it off, a cloud of dust and ashes billowing into a haze of white around you. The inside is surprisingly pristine, a gorgeous orange blanket covering a slightly rotund lump.
+
+You carefully remove the sheets. Underneath, you find... a red junglefowl. From the looks of it, it’s very old. And surprisingly well preserved.}
+
+^chicken
+{You slowly pick up the junglefowl, sighing. All that for this...? You turn the junglefowl around in your hands. It’s surprisingly large. It should be able to serve a lot of people.
+
+You glance down at Carl, still sleeping soundly. How would he react...?}
+
+_carl
+{Carl is sleeping. He has feathers (and you don’t) so he should be fine.}
+
+@up=PRECIPICE
+/////////////////////////////////////////////////////

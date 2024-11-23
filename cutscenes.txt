@@ -1,0 +1,70 @@
+>DINNER
+
+You stand in the kitchen, finally with all the ingredients. Putting down your recipe notes and preparing the pans, it’s finally time to cook.
+
+
+You defeather and gut the junglefowl, again surprised by how well it’s preserved. You defrost it for ten minutes and play a game of chess with Carl in the meantime. For some reason, he seems happy that you’re cooking the junglefowl? Oh, well. The chicken finishes defrosting and you take it out to wash.
+
+You pick up the junglefowl (not Carl) and begin to cut it into pieces. You season each piece with salt and pepper, ensuring they’re well-coated. After that, you lightly dust them with flour.
+
+Through the kitchen window, you see the sun beginning to set over the horizon. It should be about time for that party.
+
+You place a large Dutch oven on the stove and turn the heat to medium. You toss in the diced bacon and listen to it sizzle. The aroma fills the kitchen as the bacon becomes crispy. After a few minutes, you remove the bacon, leaving the rendered fat behind.
+
+As you are cooking the food, you begin to hear noises from the solarium. The windows are opening and chatter begins to build up.
+
+
+You return to the Dutch oven and add the chicken pieces, making sure not to overcrowd the pot. You watch as they brown beautifully on all sides, the skin becoming golden and crispy. Once done, you remove them and set them aside.
+
+You turn around and see that your suspicions have been true all along. Birds! Birds of all kinds have gathered in the living room, from ostriches to flamingos. 
+
+
+You chop the onions and mince the garlic, then toss them into the pot. The sound of sizzling fills the air as the onions turn translucent.
+
+The house is filled with lively chatter. From the front door, a family of crows comes in carrying an especially large plate of seafood casserole. You soon realise that each bird group has brought its own dish to the table. This really is going to be a feast after all.
+
+
+You chop the tomatoes and stir them into the sautéed onions and garlic, letting them cook for a few minutes. Then, you pour in the red wine, watching it swirl around as you scrape up the browned bits from the bottom of the pot. 
+
+As you are doing this, some birds join you in preparing dinner. While a large lasagna is ferried by a bald eagle into the oven, you also notice a large flock beginning to touch down in the yard. 
+
+
+You return the browned chicken and crispy bacon to the pot, nestling them in the aromatic liquid. You add the thyme and any additional seasonings, making sure everything is well mixed.
+
+The backyard is now filled, birds perched around the porch and on the garden lights. Now that the whole party has arrived, the ostriches and emus begin setting up some large lawn tables across the grass.
+
+
+You bring the pot to a boil, then reduce the heat to low and cover it. It’ll take roughly 45 minutes for this to cook, so you have a seat with Carl, fast asleep, in front of the television.
+
+
+After a long debate with the canada geese on whether it should be “gooses” or “geese”, it’s time to lift the lid and check the chicken, which is now tender and cooked through. You taste the sauce and adjust the seasoning, satisfied with the rich, complex flavours. The thyme sprigs are removed, and the dish is ready for topping.
+
+Ladling the Coq au Vin into bowls, you split servings of crusty bread, mashed potatoes, and rice across the dishes. You tray all the bowls, and after a long sigh and another question of why birds would eat chicken, you start towards the dining room.
+
+
+You enter the dining room, set under a canopy of twinkling lights and now adorned with colourful autumn leaves. Sensing that a chicken dish probably isn’t good for songbirds, you make your way to a table with hawks and vultures.
+
+
+As you approach, Carl comes up to you. “Well, well, well! What do we have here? Is this grandpa?” he laughs. “I just wanted to congratulate you on giving him a good resting place. He’s probably rolling over in his gravy right now!” He hands you the check for the amount promised and gives you a feathery slap on the back.
+
+What the actual hell.
+
+
+With a grand gesture, you set the dishes in the centre of the table, each serving surrounded by steaming sides of buttery mashed potatoes and crusty bread. As you begin to leave, Carl invites you to join him for some dinner. Who would object?
+
+You sit down, the egrets and ducks, initially awkward. But you soon warm up, enjoying the surprising warmth that these guys can offer. Tonight, you’re all part of this Thanksgiving celebration whether you like it or not: celebrating good food, good company, and a grandpa who tastes a lot like thyme.
+
+HAPPY THANKSGIVING!
+
+Thanks for playing through this whole thing! 
+
+A big thanks to Ishan Ajwani for telling me to use Bootstrap, Dan Tra for letting me study multi, and Eric Guo for the emotional damage of joining Dev Club (8A Wednesdays, beginners welcome!). 
+
+This story was completely written by me, Peter Laosiri. Although this website is intended to generate text adventures based on AI, I made this demo to get a better understanding of the writing process behind games like this and decide how to code up important systems.
+
+You may be wondering why I made this… I’ve always admired simple games, text adventures especially. This genre is very old, like half a century old, at least. I went into this school year knowing squat about web dev and want to learn AI, so... what better way than through this?
+
+Oh, and a little known fact: if you google “text adventure”, inspect element, and go to the console menu, you’ll find a surprise very similar to this one.
+
+
+Feel free to share experience with your friends, and wish me luck... the hard part is just getting started for me.
