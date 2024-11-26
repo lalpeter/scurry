@@ -1,3 +1,10 @@
+Day 21 - 11/26:
+Looked into implementing the regex...
+And found a way to do it! I've made some fixes and modifications to the Regex expressions for that.
+Some of them just didn't work? I don't know.
+But for some reason the file system read .txt file stuff doesn't work.
+Result : Regex Fixes + Understanding
+
 Day 20 - 11/22:
 Ok... got way too much done today...
 Created the .txt syntax... and it's really fucking good.
