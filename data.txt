@@ -181,7 +181,7 @@ _apron!(^[carl])
 
 “Hello! Nice to meet you! I’m Carl,” he says, with eyes wide open. “How goes your day?” You decide to tell him about the meal, leaving out the chicken part.
 
-“Oh, I’m sure I can help! Ask me if you need anything. But by name! I’m not a chicken,"he says. Then falls asleep. Okay then.}
+“Oh, I’m sure I can help! Ask me if you need anything. But by name! I’m not a chicken,” he says. Then falls asleep. Okay then.}
 
 _carl
 {“Those seeds on the floor look very good…”}
@@ -410,7 +410,7 @@ You flip the first lever again. You hear a large creaking mechanism as all the l
 {At the end of the corridor, you stand before a large, gaping hole in the floor, its edges rough and crumbling. Peering into the abyss, you can’t see the bottom. Only an impenetrable darkness yawns below, as if it could swallow your torchlight whole.}
 
 ?<!ladder_used>
-{Next to the hole, a long rope ladder lies coiled, its fibres frayed and worn, suggesting it hasn't been used in centuries.}
+{Next to the hole, a long rope ladder lies coiled, its fibres frayed and worn, suggesting it hasn‘t been used in centuries.}
 
 %ladder!<!ladder_used>(=ladder_used@down)
 {You grab the long rope ladder and carefully uncoil it. With a firm grip, you drop one end into the hole, watching it disappear into the dark as it falls.}
