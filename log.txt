@@ -1,3 +1,10 @@
+Day 23 - 12/9:
+Spent a bit more time looking into regex.
+Unfortunately, there doesn't seem to be a super easy way to do regex for everything...
+Except with a while loop. For each regex. I think that might work.
+But otherwise, got name parsing done.
+Result : Name is Parsed for each Room
+
 Day 22 - 12/3:
 Decided to put off working on director and figured out how to setup a local server. (It works!)
 But been struggling with str.match(regex) or whatever. Will figure out next time.
