@@ -1,3 +1,10 @@
+Day 24 - 12/10:
+Worked more on the regex!
+Got the exits parsed and started on parsing prompts.
+Which requires conditional and variable parsing...
+From the looks of it, I should be able to easily knock out everything else if I do this right, though.
+Result : Parsed Exits for Each Room + Started on Prompt Parsing
+
 Day 23 - 12/9:
 Spent a bit more time looking into regex.
 Unfortunately, there doesn't seem to be a super easy way to do regex for everything...
