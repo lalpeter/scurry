@@ -116,7 +116,7 @@ The closet is cramped, but tall. It’s too dark to see anything, but there’s 
 ?<=breakers_on=[red_wine]>
 {The closet is cramped, but tall. Looking up, you see an empty shelf.}
 
-^wine<=breakers_on>
+^wine!<=breakers_on>
 {It’s out of reach.}
 
 ^wine<=[rake]=breakers_on>

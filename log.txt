@@ -1,3 +1,13 @@
+Day 25 - 12/12:
+Finished up the regex for the conditionals.
+Well, the regex part was simple. The hard part was figuring our the right data structures for the job.
+I made some changes that I don't quite remember... but I've documented the specifics
+on the .js file and the outline document so that I don't forget.
+Also made some structure changes to things involving interaction. Multiple outcomes are possible
+based on what you have on hand and the conditions in the game, so I've accounted for that.
+Anyway, finished prompting and item collecting data strctures. Should be able to finish the up in 1 or 2 days.
+Result : Parsed Prompts and Collections
+
 Day 24 - 12/10:
 Worked more on the regex!
 Got the exits parsed and started on parsing prompts.
