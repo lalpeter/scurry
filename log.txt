@@ -1,3 +1,10 @@
+Day 26 - 12/17:
+Finished all the regex! It works like a charm.
+I'm starting to get this thing to work. I've gotten the general form for reading in conditionals,
+which includes both variables and items. I'm trying to print out exit data, but that is working pretty
+weirdly right now? Unsure why. I'll leave a note.
+Result : Finished Regex and Started Exits
+
 Day 25 - 12/12:
 Finished up the regex for the conditionals.
 Well, the regex part was simple. The hard part was figuring our the right data structures for the job.

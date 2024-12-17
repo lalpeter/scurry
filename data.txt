@@ -1,4 +1,5 @@
 +FRONT_DOOR
+?
 {You are standing in front of the old hickory door of a run-down brick house. Around you is a forest of orange and red, and behind you is the one-way road that led you here. The door is unlocked.}
 
 !south

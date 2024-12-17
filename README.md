@@ -10,4 +10,4 @@
 
 
 Scurry is an AI-powered website where you can generate and play through text adventures. 
-Version <indev>
+Indev Version.

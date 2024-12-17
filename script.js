@@ -1,10 +1,13 @@
+// SECTION : PARSING OF INITIAL TEXT ADVENTURE
 var adventure;
 fetch('./data.json').then(response => {
     if(!response.ok) {throw new Error("Failed to process data.json.");}
     return response.json();
 }).then(data => {
-    start(data.Adventure)
+    start(data.Adventure);
 }).catch(error => console.error("File not found.", error));
+
+function print(anything){console.log(anything);}
 
 // Returns an array of string matches!
 function match(pattern, data){
@@ -17,6 +20,16 @@ function match(pattern, data){
 }
 
 //Variable classification enums
+var Enum = {
+    VarActs : {
+        NO : 0,
+        YES : 1,
+        USE : 2,
+        TAKEN : 3,
+        GIVE : 4,
+        EXIT : 5
+    }
+}
 var NO = 0;     // ! : false
 var YES = 1;    // = : true
 var USE = 2;    // ! : var, consume
@@ -61,9 +74,8 @@ function parseDirectives(conditionals, variables){
     return dirs;
 }
 
-function start(adventure){
+function load(adventure){
     const listOfRooms = adventure.match(/(\+.*?(?=\+)|\+.*?$)+?/gs);
-    console.log(listOfRooms); //List of room strings.
     let data = [];
     for (const room of listOfRooms) {
         const name = room.match(/^\+(.*?)$/m)[0].substring(1).toLowerCase();
@@ -78,7 +90,7 @@ function start(adventure){
         let matches = match(/^@(.*?)(~)?=(.*)$/gm, room);
         for (const data of matches) {
             branch.exits[data[1]] = {
-                exit_direction : data[3].toLowerCase(),
+                location : data[3].toLowerCase(),
                 disabled : data[2] != undefined
             }
         }
@@ -119,24 +131,143 @@ function start(adventure){
             });
         }
 
+        // Extract map item use information
+        // 1st capture - name of item to pickup
+        // 2nd capture (optional) - !, if any
+        // 4th capture (optional) - <conditional information>
+        // 6th capture (optional) - (variable setting)
+        // 7th capture - {prompt text}
+        branch.devices = [];
+        matches = match(/^%(\w*)(!?)(<(.*?)>)?(\((.*?)\))?.*?{(.*?)}/gsm, room);
+        for (const data of matches) {
+            if(!branch.devices[data[1]]){ branch.devices[data[1]] = []; }
+            var [conditionals, variables, exitDirs] = parseDirectives(data[4], data[6]);
+            branch.devices[data[1]].push({
+                text : data[7].toString(),
+                break : data[2]!=undefined,
+                conditions : conditionals,
+                vars : variables,
+                exits : exitDirs
+            });
+        }
 
-        // Sample REGEX Run
-
-        // const rant = "Would you rather have unlimited bacon but no more video games, or games, unlimited games, but no games?";
-        // const re = /\b(\w*b\w*)\b/g;
-        // const re2 = /\b(\w*a\w*)\b/g;
-        // let match;
-        // let aWords = [];
-        // let bWords = [];
-        // while (match = re.exec(rant)){
-        //     if (match[1]){bWords.push(match[1]);}
-        // }
-        // while (match = re2.exec(rant)){
-        //     if (match[1]){aWords.push(match[1]);}
-        // }
-        // console.log(`Words with b: ${bWords}`);
-        // console.log(`Words with a: ${aWords}`);
-
+        // Extract attempted room exit information
+        // 1st capture - name of direction
+        // 3rd capture - {prompt text}
+        branch.exits_fail = [];
+        matches = match(/^\!(((?!\s).)*)\s*{(.*?)}/gsm, room);
+        for (const data of matches) {
+            branch.exits_fail[data[1]] = {
+                text : data[3].toString()
+            };
+        }
     }
-    console.log(data);
+    return data;
+}
+
+// SECTION : USER NAVIGATION
+var input = document.getElementById("input");
+const prompts = document.getElementById('prompts');
+
+var START_CUTSCENE = undefined;
+var START_ROOM = "front_door";
+var room = undefined;
+var map = undefined;
+var vars = [];
+var items = [];
+var had = [];
+
+function prompt(toSay, xfit){
+  var say = input.value;
+  const newPrompt = document.createElement('div');
+  newPrompt.className = 'prompt';
+  newPrompt.innerHTML = toSay;
+  input.value = '';
+  if (xfit){
+    newPrompt.style.width = "fit-content";
+    newPrompt.style.alignSelf = "center";
+  }
+  prompts.prepend(newPrompt);
+}
+
+function action(input){
+    prompt(input.toString().toLowerCase());
+}
+
+function update_items(){
+
+}
+  
+input.addEventListener("keypress", function(event) {
+    console.log('hello');
+    if (event.key === "Enter") {
+        action(input.value);
+    }
+});
+
+function describe(location){
+    let rData = map[location];
+    console.log(rData);
+    // Prompts!
+
+    var toPrint = "";
+
+    for (let pData of rData.prompts ){
+        let conds = pData.conditions;
+        let dvars = pData.vars;
+        let exits = pData.exits;
+        let brk = false;
+        for (let cond of conds){ // Break if conditionals passed.
+            if (!cond.isItem){
+                if (cond.action == Enum.VarActs.YES && vars[cond.name] != true){ brk = true; break; }
+                else if (cond.action == Enum.VarActs.NO && vars[cond.name] ){ brk = true; break; }
+            }else{
+                if (cond.action == Enum.VarActs.YES && !items[cond.name]){ brk = true; break; }
+                else if (cond.action == Enum.VarActs.NO && items[cond.name] ){ brk = true; break; }
+                else if (cond.action == Enum.VarActs.TAKEN && !had[cond.name] ){ brk = true; break; }
+            }
+        }
+        toPrint += pData.text + "\n";
+        if(brk){continue;}
+        for (let dvar of dvars){ // Set variables.
+            if (!dvar.isItem){
+                if (dvar.action == Enum.VarActs.YES){vars[dvar.name]=true;}
+                else if (dvar.action == Enum.VarActs.NO){vars[dvar.name]=false;}
+            }else{
+                if (dvar.action == Enum.VarActs.GIVE){items[dvar.name]=true; had[dvar.name]=true;}
+                else if (dvar.action == Enum.VarActs.NO){items[dvar.name]=false;}
+                else if (dvar.action == Enum.VarActs.EXIT){rData.exits[dvar.name].disabled=false;}
+            }
+        }
+    }
+
+    prompt(toPrint);
+
+    //Exits are acting weird.
+    var exitStr = "<b>Possible exits:</b>\n";
+    let ct = 0;
+    console.log(rData.exits);
+    for (let exitData of rData.exits ){ct += 1;}
+    let mct = 0;
+    console.log(ct);
+    for (let [direction, exitData] of rData.exits ){
+        console.log(exitData.location);
+        if(!exitData.disabled){ 
+            exitStr += direction + mct == ct?", ":"";
+        }
+    }
+    prompt(exitStr);
+    update_items();
+}
+
+function start(adventure){
+    map = load(adventure);
+    console.log("Map Data")
+    console.log(map);
+    if (START_CUTSCENE){
+        console.log("cutscene!");
+    }else{
+        room = START_ROOM;
+    }
+    describe(room);
 }
