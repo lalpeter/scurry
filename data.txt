@@ -73,21 +73,6 @@ _carl
 @west=ENTRANCE
 @east=CLOSET
 @north=DINING_AREA
->DINING_AREA
-{Under the lights of flickering candles above, you face a cluttered table, littered with more books and trash. Surprisingly, this room is quite large with many of these tables and chandeliers. If it weren’t for all the clutter, it would probably resemble a high-end restaurant. Natural light streams through windows facing the backyard, overgrown with vines but lit by torchlight.}
-
-?<![seeds]>
-{A neat packet of pumpkin seeds lies on the floor.}
-
-?
-{To your right, more light leaks from a wider room with some doors.}
-
-^seeds
-{You take the pumpkin seeds. They won’t be in the Coq au Vin you’re making, but you never know.}
-
-@west=KITCHEN
-@east=SOLARIUM
-@south=LIVING_ROOM
 /////////////////////////////////////////////////////
 +DINING_AREA
 ?

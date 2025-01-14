@@ -1,5 +1,7 @@
 // SECTION : PARSING OF INITIAL TEXT ADVENTURE
 var adventure;
+var library = [];   // All of the variables.
+var inventory = new Set(); // Inventory items.
 fetch('./data.json').then(response => {
     if(!response.ok) {throw new Error("Failed to process data.json.");}
     return response.json();
@@ -81,7 +83,6 @@ function load(adventure){
         const name = room.match(/^\+(.*?)$/m)[0].substring(1).toLowerCase();
         data[name] = [];
         var branch = data[name];
-        
         // Extract exits
         // 1st capture - name of direction
         // 2nd capture - tilde, if any
@@ -190,16 +191,76 @@ function prompt(toSay, xfit){
   prompts.prepend(newPrompt);
 }
 
+// 😁😁😁😁😁😁😁
+// ISSUE : Variables just refuse to load in for some strange reason.
+// Unsure why. See Kitchen -> Pie -> Variables, and then  look at data.txt.
+
+function interact(input){
+    let rData = map[room];
+    let mItems = rData.devices;
+    for (var itm in mItems){
+        for (var branch of mItems[itm]){
+            // USES ROOM LOGIC. MAY CAUSE PROBLEM.
+            let conds = branch.conditions;
+            let dvars = branch.vars;
+            let exits = branch.exits;
+            let brk = false;
+            for (let cond of conds){ // Break if conditionals passed.
+                if (!cond.isItem){
+                    if (cond.action == Enum.VarActs.YES && vars[cond.name] != true){ brk = true; break; }
+                    else if (cond.action == Enum.VarActs.NO && vars[cond.name] ){ brk = true; break; }
+                }else{
+                    if (cond.action == Enum.VarActs.YES && !items[cond.name]){ brk = true; break; }
+                    else if (cond.action == Enum.VarActs.NO && items[cond.name] ){ brk = true; break; }
+                    else if (cond.action == Enum.VarActs.TAKEN && !had[cond.name] ){ brk = true; break; }
+                }
+            }
+            if(brk){continue;}
+            print("we did it!");
+            prompt(branch.text);
+            print(dvars);
+            for (let dvar of dvars){ // Set variables.
+                if (!dvar.isItem){
+                    if (dvar.action == Enum.VarActs.YES){vars[dvar.name]=true;}
+                    else if (dvar.action == Enum.VarActs.NO){vars[dvar.name]=false;}
+                }else{
+                    if (dvar.action == Enum.VarActs.GIVE){items[dvar.name]=true; had[dvar.name]=true;}
+                    else if (dvar.action == Enum.VarActs.NO){items[dvar.name]=false;}
+                    else if (dvar.action == Enum.VarActs.EXIT){rData.exits[dvar.name].disabled=false;}
+                }
+            }
+            if(branch.break){
+                delete mItems[itm];
+            }
+        }
+    }
+    if(mItems){return true;}
+}
+
+function use_item(input){
+    
+}
+
 function action(input){
-    prompt(input.toString().toLowerCase());
+    let rData = map[room];
+    let exitData = rData.exits[input];
+    if (exitData&&!exitData.disabled){//Check if input matches an exit direction. If so, travel.
+        let nextRoom = exitData.location;
+        room = nextRoom;
+        describe(room);
+    }else if(input == "look"||input=="about"||input=="where"||input=="?"){//Room reloading.
+        describe(room);
+    }else if(interact(input)){//Use map items. Includes "collect" and "devices".
+
+    }else if(use_item(input)){//Use inventory items. 
+
+    }else{
+        prompt('"' + input.toString().toLowerCase() + '" does not make sense.' );
+    }
+    //
 }
 
-function update_items(){
-
-}
-  
 input.addEventListener("keypress", function(event) {
-    console.log('hello');
     if (event.key === "Enter") {
         action(input.value);
     }
@@ -207,11 +268,10 @@ input.addEventListener("keypress", function(event) {
 
 function describe(location){
     let rData = map[location];
-    console.log(rData);
     // Prompts!
 
     var toPrint = "";
-
+    var ost = true;
     for (let pData of rData.prompts ){
         let conds = pData.conditions;
         let dvars = pData.vars;
@@ -227,8 +287,9 @@ function describe(location){
                 else if (cond.action == Enum.VarActs.TAKEN && !had[cond.name] ){ brk = true; break; }
             }
         }
-        toPrint += pData.text + "\n";
         if(brk){continue;}
+        if(!ost){toPrint += "\n\n";}
+        toPrint += pData.text;
         for (let dvar of dvars){ // Set variables.
             if (!dvar.isItem){
                 if (dvar.action == Enum.VarActs.YES){vars[dvar.name]=true;}
@@ -239,30 +300,27 @@ function describe(location){
                 else if (dvar.action == Enum.VarActs.EXIT){rData.exits[dvar.name].disabled=false;}
             }
         }
+        ost = false;
     }
 
     prompt(toPrint);
 
     //Exits are acting weird.
-    var exitStr = "<b>Possible exits:</b>\n";
-    let ct = 0;
-    console.log(rData.exits);
-    for (let exitData of rData.exits ){ct += 1;}
-    let mct = 0;
-    console.log(ct);
-    for (let [direction, exitData] of rData.exits ){
-        console.log(exitData.location);
+    var exitStr = "<b>Possible exits:</b> ";
+    ost = true;
+    for (var direction in rData.exits ){
+        var exitData = rData.exits[direction];
         if(!exitData.disabled){ 
-            exitStr += direction + mct == ct?", ":"";
+            if(!ost){exitStr+=", "}
+            exitStr += direction;
+            ost = false;
         }
     }
     prompt(exitStr);
-    update_items();
 }
 
 function start(adventure){
     map = load(adventure);
-    console.log("Map Data")
     console.log(map);
     if (START_CUTSCENE){
         console.log("cutscene!");
