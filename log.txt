@@ -1,3 +1,10 @@
+Day 27 - 1/14:
+Back from the break, sadly. Anyways! Implemented traveling between rooms.
+Which works fine and handles restrictions pretty well! I think this is ready for showcase now.
+That being said, I can't seem to get variables to update for the pie. It'd be nice, but... you know.
+I'll see if I can fix it next week or something.
+Result : You can travel between rooms!
+
 Day 26 - 12/17:
 Finished all the regex! It works like a charm.
 I'm starting to get this thing to work. I've gotten the general form for reading in conditionals,
