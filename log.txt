@@ -1,3 +1,12 @@
+Day 28 - 1/28:
+Presentations are finally over! Thank god.
+I've decided to port everything over to OneDrive since the Github struggle got wayyy too unreal.
+Sucks, but I guess it's easier. FCPS gave me 5 TB and I haven't opened this thing since sophomore year.
+So everything's (generally) all good! Although, I will need to look into moving this to the TJ web cluster thingamajiggy.
+Starting on thursday, I'll start working on the AI implementation! I know that I still have to implement items and cutscenes, butt...
+Oh no... NVM!! Heard from Aiden that GitHub's back up again. What the hell, man?
+Result : Ported to OneDrive, then... Ported Back.
+
 Day 27 - 1/14:
 Back from the break, sadly. Anyways! Implemented traveling between rooms.
 Which works fine and handles restrictions pretty well! I think this is ready for showcase now.
