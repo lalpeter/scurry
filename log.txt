@@ -1,3 +1,18 @@
+Day 29 - 1/30:
+Started working on getting the whole damn AI to work.
+Which starts with installing Gemini!
+So you might think that pip install gemini or something might work.
+It doesn't.
+Because pip doesn't exist! SO I SPENT ALL OF TODAY TRYING TO GET PIP TO WORK.
+Went through Chocolatey.
+Nuh uh.
+python3? Oh, download from Microsoft Store! That's blocked.
+Editing system variables? Nah.
+Does it work?
+It still doesn't.
+Seething.
+Result : ...Nothing
+
 Day 28 - 1/28:
 Presentations are finally over! Thank god.
 I've decided to port everything over to OneDrive since the Github struggle got wayyy too unreal.
