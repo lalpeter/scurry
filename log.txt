@@ -1,3 +1,7 @@
+Day 30 - 2/3:
+Got Gemini imported and started outputting things.
+Result : Gemini Works!
+
 Day 29 - 1/30:
 Started working on getting the whole damn AI to work.
 Which starts with installing Gemini!
