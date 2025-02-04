@@ -1,5 +1,27 @@
+Day 31 - 2/4:
+Alright, back from writing yesterday's log.
+So yeah, Gemini works now. I'm not sure if it has a limit to the text or whatever it can generate, but I'll just keep working until I hit a wall of some sort.
+That being said, I've hit the wall of not knowing what to do with Gemini. Specifically, how much it can do.
+I just searched it up. Apparently there's a limit on answers per minute for the flash model?
+Fifteen. I can't do anything with fifteen responses per minute! What fun's a short text adventure that takes 2 minutes to generate?
+So it might be easier to use a local AI. Ahem. Might.
+...So I've done it! DeepSeek is in the system. Except it's way too slow...
+The problem is that it's in the system though. AKA, I don't know if I can upload this thing to Director.
+In fact, I started running it before writing the previous sentence. It's still going...
+I'll wait until it finishes and paste whatever garbage it cooked up in the log in here.
+Anyways, it runs in a js script too! Which is handy given the nature of... my srp being a website, after all.
+But... damn is it slow. Especially on here...
+Result : DeepSeek Works!
+
 Day 30 - 2/3:
 Got Gemini imported and started outputting things.
+Heya, this is future me retroactively.
+On this day, Mr. Tra helped me get the path to python working.
+Well, temporarily at least. I can't just call "python" from the terminal. I have to refer to the exact file location OF python.
+So I need to refer to the WHOLE PATH everytime I want to do python anything in the terminal.
+Which kinda sucks. (Sort of and understatement of that) But... all I really needed to do was install Gemini, so I probably won't be needing to do it all too much.
+There's probably a way easier way of doing this, but... it works. And I won't need to find another method if this is going alright.
+Anyways, I'm going to today's log.
 Result : Gemini Works!
 
 Day 29 - 1/30:

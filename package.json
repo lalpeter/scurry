@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
-  },
-  "devDependencies": {}
+    "express": "^4.21.1",
+    "ollama": "^0.5.12"
+  }
 }

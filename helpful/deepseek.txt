@@ -1,0 +1,9 @@
+how to get deepseek
+1. install ollama
+2. from command line (general, outside of vs) say "ollama" to make sure things work right
+3. ollama run deepseek-r1
+4. go to this vs code project (you are here!)
+5. follow ai.js as a base
+6. node ai.js
+
+https://workos.com/blog/how-to-run-deepseek-r1-locally

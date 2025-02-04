@@ -3,3 +3,5 @@ C:\Users\"Laosiri Peter"\AppData\Local\Programs\Python\Python313
 
 install gemini
 C:\Users\Laosiri Peter\AppData\Local\Programs\Python\Python313>python -m pip install -q -U google-generativeai
+
+JK, I've stuck it in here now.
