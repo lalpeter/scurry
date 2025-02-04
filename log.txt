@@ -11,6 +11,67 @@ In fact, I started running it before writing the previous sentence. It's still g
 I'll wait until it finishes and paste whatever garbage it cooked up in the log in here.
 Anyways, it runs in a js script too! Which is handy given the nature of... my srp being a website, after all.
 But... damn is it slow. Especially on here...
+
+<think>
+Okay, so I need to create a text adventure game based on Timothée Chalamet's horror mansion. First, I should think
+about what elements are important in such a setting. Since it's a horror mansion, it probably has various rooms
+with eerie features.
+
+I'll start by outlining 10 different rooms. Each room needs unique characteristics but also some connection to
+others so the player can move between them naturally. Maybe one central room that connects multiple others, acting
+as a hub or focal point of the mansion's horror.
+
+Let me assign names to each room. Names should evoke a sense of mystery and fear—like "Whispers," "Shadows,"
+"Creaks," etc. Then I'll connect each room based on their layout within the mansion.
+
+I need to make sure that moving between rooms is logical, perhaps based on features like doors leading to other
+rooms or hidden paths. For example, the "Whispering Hall" could have a door to the "Dread Chamber" and another to
+the "Obscurer Room." This way, each room can be connected through specific points.
+
+I should also consider how each room affects the game. Maybe some rooms trigger abilities or add elements that
+make the mansion more terrifying. For instance, the "Bloodstained Hallway" could have a flickering light and a
+hidden staircase to another room.
+
+I'll list out all 10 rooms with their respective connections, ensuring each has at least one connection leading to
+another room except possibly the last one for closure or a final challenge.
+</think>
+
+Room1:(Room2,Rm3,Rm4),Room2:(Room1,Rm5),Room3:(Room1,Rm6),Room4:(Room1,Rm7),Room5:(Room2,Rm8),Room6:(Room3,Rm9),Roochallenge.</think>Room1:(Room2,Rm3,Rm4),Room2:(Room1,Rm5),Room3:(Room1,Rm6),Room4:(Room1,Rm7),Room5:(Room2,Rm8),Room6:(Room3,Rm9),Room7:(Room4,Rm10),Room8:(Room5,Rm9),Room9:(Room6,Rm8,Rm10),Room10:(Room7,Rm9)
+
+Okay, looking at this makes me think that DeepSeek is mentally ill. Here's the second one.
+>>> Just give me a list of 10 rooms for the mansion.
+<think>
+Alright, let's tackle this request. The user is asking for just a list of 10 rooms without any additional details
+or connections. They mentioned it's for a text adventure based on Timothée Chalamet's horror mansion.
+
+First, I need to consider what elements are essential in such a mansion room list. It should evoke the eerie and
+terrifying atmosphere typical of horror settings. Each room should have unique features that contribute to the
+overall horror experience.
+
+I'll aim to create rooms with names that suggest mystery or danger—like "Shadows," "Creaks," "Flickering Hallway,"
+etc. This helps set the tone without getting too detailed, as per their request for just a list of room names.
+
+Next, I should ensure each room is distinct and adds to the mansion's horror vibe. For example, some rooms might
+have doors that lead elsewhere or peculiar features like bloodstains or flickering lights.
+
+Since they only asked for the list of rooms, I'll focus on providing 10 names without specifying connections
+between them this time. This allows the user to use these room names in their own adventure creation later if
+needed.
+</think>
+
+Here is a list of 10 rooms for your text adventure based on Timothée Chalamet's horror mansion:
+
+1. Room: (Shadows)
+2. Room: (Creaks)
+3. Room: (Flickering Hallway)
+4. Room: (Bloodstained Floor)
+5. Room: (Glimpses of Light)
+6. Room: (Stained Glass Window)
+7. Room: ( secret passage)
+8. Room: (Unstable Foundation)
+9. Room: (Rotting Walls)
+10. Room: ( final staircase)
+
 Result : DeepSeek Works!
 
 Day 30 - 2/3:
