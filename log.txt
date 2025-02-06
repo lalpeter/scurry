@@ -1,3 +1,7 @@
+Day 32 - 2/6:
+Asked Tra about stuff. Decided to go to Gabor.
+Result : 
+
 Day 31 - 2/4:
 Alright, back from writing yesterday's log.
 So yeah, Gemini works now. I'm not sure if it has a limit to the text or whatever it can generate, but I'll just keep working until I hit a wall of some sort.
