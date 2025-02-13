@@ -1,9 +1,21 @@
+Day 34 - 2/13:
+Alright, back up to date. I did some more prompt engineering and started planning out the connection algorithm.
+I decided to make the AI all local (inspired by Anirudh :>) since it would probably take way too much work to host it...
+Unsure how that will turn out, though... I would like to do a live demo, after all.
+But given the fact that I use a ton of prompts... APIs are probably a bad idea at this point.
+Anyways, you can win by finding treasures and going to an exit.
+I do want to have things like locked doors (or maybe lights that are off too) but that is also kind of a pain to implement...
+Oh! And I should give hints to the player on what they should do to unlock the doors by interacting with stuff.
+Result : More Prompt Engineering + Algorithm Planning
+
 Day 33 - 2/10:
-Prompt engineering
+Prompt engineering! Made a few prompts on this day that generated the room names and potential neighbors for each room.
+I also emailed Anirudh for help here... lo and behold, it was not super helpful.
+Result : A bit of Prompt Engineering
 
 Day 32 - 2/6:
-Asked Tra about stuff. Decided to go to Gabor.
-Result : 
+Asked Tra about stuff. Decided to go to Gabor... for help on the server stuff.
+Result : The Search Mission for help Began
 
 Day 31 - 2/4:
 Alright, back from writing yesterday's log.
